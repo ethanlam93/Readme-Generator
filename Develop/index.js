@@ -3,6 +3,7 @@ const fs = require("fs")
 const util = require("util")
 const axios = require("axios");
 const boxen = require('boxen');
+const emoji = require('node-emoji')
 
 const readme = (newData) => {
   return `
@@ -49,75 +50,75 @@ const questions = [
   {
     type: "input",
     name: "name",
-    message: "What is your name?",
+    message: `What is your name? ${emoji.get("sunglasses")}`,
     default: "Honey"
   },
   {
     type: "input",
     name: "title",
-    message: "What is the title of your project",
+    message: `What is the title of your project? ${emoji.get("spiral_note_pad")}`,
     default: "Untitled"
   },
   {
     type: "input",
     name: "username",
-    message: "What is your Github username?",
+    message: `What is your Github username? ${emoji.get("key")}`,
     default: ""
   },
   {
     type: "input",
     name: "email",
-    message: "What is your email address?",
+    message: `What is your email address? ${emoji.get("house")}`,
     default: "I don't have an email address"
   },
   {
     type: "input",
     name: "contact",
-    message: "How do you want people to reach you?",
+    message: `How do you want people to reach you? ${emoji.get("mailbox")}`,
     default: "Do not contact me"
   },
   {
     type: "input",
     name: "description",
-    message: "Please type a short description of your project",
+    message: `Please type a short description of your project ${emoji.get("pencil")}`,
     default: "This is a project"
   },
   {
     type: "input",
     name: "installation",
-    message: "How do you install this application? ",
+    message: `How do you install this application? ${emoji.get("arrow_double_down")}`,
     default: "No installation"
   },
   {
     type: "input",
     name: "usage",
-    message: "Give example of some ways you can use this application ( When you are done, hit ESC & type \":wq\" to exit editor)",
+    message: `Give example of some ways you can use this application ${emoji.get("question")} (When you are done, hit ESC & type \":wq\" to exit editor)`,
     default: "Not available"
   },
   {
     type: "list",
     name: "license",
-    message: "What kind of license would you like to use?",
+    message: `What kind of license would you like to use? ${emoji.get("closed_lock_with_key")}`,
     choices: ["MIT", "Microsoft Public License", "Mozilla Public License 2.0", "Academic Free License v3.0", "Open Software License 3.0", "Creative Commons Attribution 4.0"],
     default: "Not Available"
   },
   {
     type: "list",
     name: "contribution",
-    message: "Are you open to contribution?",
+    message: `Are you open to contribution? ${emoji.get("man-woman-girl-girl")}`,
     choices: ["Yes", "No"],
     default: "Yes"
   },
   {
     type: "input",
     name: "contributionRequirement",
-    message: "If Yes, What are your requirement for giving contribution?",
+    message: `If Yes, What are your requirement for giving contribution? ${emoji.get("man-raising-hand")}`,
     default: "No Requirement"
   },
   {
     type: "input",
     name: "test",
-    message: "Please give instructions for testing of this project ( When you are done, hit ESC & type \":wq\" to exit editor)",
+    message: `Please give instructions for testing of this project ${emoji.get("rocket")}( When you are done, hit ESC & type \":wq\" to exit editor)`,
     default: "No instruction available"
   }
 ]
@@ -151,11 +152,14 @@ inquirer.prompt(questions)
       )
       console.log(boxen(`YOUR README HAS BEEN CREATED`, { padding: 1 }));
     })
-    //If the user provide an invalid github username, the app will alert about this error
-    .catch(function (error) {
-      // handle error
-      console.log("This repo doesn't exist, please run the program again with a valid username");
-    })
+      //If the user provide an invalid github username, the app will alert about this error
+      .catch(function (error) {
+        // handle error
+        console.log(`      ${emoji.get("x")} ${emoji.get("x")} ${emoji.get("x")}
+      This repo doesn't exist, please run the program again with a valid username
+      ${emoji.get("x")} ${emoji.get("x")} ${emoji.get("x")}
+      `);
+      })
   })
 
 
