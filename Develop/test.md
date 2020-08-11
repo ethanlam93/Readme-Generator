@@ -1,6 +1,6 @@
 
-# Not Available 
-License covered under MIT
+# Untitled 
+Covered under MIT
 ## Table of Contents
 
 1. [Description](#description)
@@ -8,29 +8,29 @@ License covered under MIT
 3. [Usage](#usage)
 4. [License](#license)
 5. [Contributing](#contributing)
-6. [Test](#test)
-7. [Question](#question)
+6. [Test](#tests)
+7. [Question](#questions)
 
 ## Description
-Not Available
+This is a project
 
 ## Installation 
-Not Available
+No installation
 ## Usage 
 ```
-Not Available
+Not available
 ```
 
 ## License 
 MIT
 ## Contributing
-Accepting contribution: true
-Not Available
+Accepting contribution: Yes
+Method: No Requirement
 
 ## Tests
-Not Available
+No instruction available
 
 ## Questions 
-
-- Github Repo : 
-- Email : Not Available 
+- Github username : ethanlam93
+- Github Repo : https://github.com/ethanlam93
+- Email : I don't have an email address 
