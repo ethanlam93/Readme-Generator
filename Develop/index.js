@@ -57,7 +57,7 @@ const questions = [
     type: "input",
     name: "title",
     message: `What is the title of your project? ${emoji.get("spiral_note_pad")}`,
-    default: "Untitled"
+    default: "To be announced"
   },
   {
     type: "input",
@@ -150,15 +150,15 @@ inquirer.prompt(questions)
         }
       }
       )
-      console.log(boxen(`YOUR README HAS BEEN CREATED`, { padding: 1 }));
+      console.log(boxen(` YOUR README HAS BEEN CREATED ${newData[0].name}  `, { padding: 1 }));
     })
       //If the user provide an invalid github username, the app will alert about this error
       .catch(function (error) {
         // handle error
-        console.log(`      ${emoji.get("x")} ${emoji.get("x")} ${emoji.get("x")}
+        console.log(boxen(`      ${emoji.get("x")} ${emoji.get("x")} ${emoji.get("x")}
       This repo doesn't exist, please run the program again with a valid username
       ${emoji.get("x")} ${emoji.get("x")} ${emoji.get("x")}
-      `);
+      `));
       })
   })
 
