@@ -1,6 +1,6 @@
 
 # To be announced 
-Covered under MIT
+[![License: MPL 2.0](https://img.shields.io/badge/License-MPL%202.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)
 ## Table of Contents
 
 1. [Description](#description)
@@ -22,7 +22,7 @@ Not available
 ```
 
 ## License 
-MIT
+Mozilla Public License 2.0
 ## Contributing
 Accepting contribution: Yes
 Method: No Requirement

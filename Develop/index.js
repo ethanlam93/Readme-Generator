@@ -1,3 +1,4 @@
+//Load all the modules
 const inquirer = require("inquirer")
 const fs = require("fs")
 const util = require("util")
@@ -5,10 +6,11 @@ const axios = require("axios");
 const boxen = require('boxen');
 const emoji = require('node-emoji')
 
+// Function to generate the readme template
 const readme = (newData) => {
   return `
 # ${newData[0].title} 
-Covered under ${newData[0].license}
+${newData[0].licenseBadge}
 ## Table of Contents
 
 1. [Description](#description)
@@ -99,7 +101,7 @@ const questions = [
     type: "list",
     name: "license",
     message: `What kind of license would you like to use? ${emoji.get("closed_lock_with_key")}`,
-    choices: ["MIT", "Microsoft Public License", "Mozilla Public License 2.0", "Academic Free License v3.0", "Open Software License 3.0", "Creative Commons Attribution 4.0"],
+    choices: ["MIT", "Mozilla Public License 2.0", "Attribution License (BY)", "Open Database License (ODbL)", "Public Domain Dedication and License (PDDL)"],
     default: "Not Available"
   },
   {
@@ -123,11 +125,24 @@ const questions = [
   }
 ]
 
+//initialize the application
+init = () => {
 //Asking users a series of question to fill their readme
 inquirer.prompt(questions)
   .then(data => {
+    // console.log(data.license);
+    // console.log(typeof(data.license));
+    //Create a new key to contain license badge value
+    data["licenseBadge"] = ""
+    // add the value of license badge to match with the name of the license
+    if ( data.license == "MIT"){ data.licenseBadge = `[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)`};
+    if ( data.license == "Mozilla Public License 2.0"){ data.licenseBadge = `[![License: MPL 2.0](https://img.shields.io/badge/License-MPL%202.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)`};
+    if ( data.license == "Attribution License (BY)"){ data.licenseBadge = `[![License: Open Data Commons Attribution](https://img.shields.io/badge/License-ODC_BY-brightgreen.svg)](https://opendatacommons.org/licenses/by/)`};
+    if ( data.license == "Open Database License (ODbL)"){ data.licenseBadge = `[![License: ODbL](https://img.shields.io/badge/License-ODbL-brightgreen.svg)](https://opendatacommons.org/licenses/odbl/)`};
+    if ( data.license == "Public Domain Dedication and License (PDDL)"){ data.licenseBadge = `[![License: ODbL](https://img.shields.io/badge/License-PDDL-brightgreen.svg)](https://opendatacommons.org/licenses/pddl/)`};
     newData = [data]
-    // console.log(newData)
+    console.log(newData)
+    
     // console.log(typeof(newData[0].username))
     //save the answers into an array
     return newData
@@ -160,8 +175,9 @@ inquirer.prompt(questions)
       ${emoji.get("x")} ${emoji.get("x")} ${emoji.get("x")}
       `));
       })
-  })
+  })}
 
+  init()
 
 
 
