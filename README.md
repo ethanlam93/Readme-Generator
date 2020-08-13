@@ -26,4 +26,16 @@ The generated README includes the following sections:
 1. Pseudo coding
 2. Create a mock readme file
 3. Create a list of questions to be asked, gives each question a specific "name" to be used to identify later
-4. 
+4. Write scripts
+5. Test, debug, and refactor
+6. Record video of application
+
+
+## Installation
+node index.js
+
+## Screenshot
+
+
+
+

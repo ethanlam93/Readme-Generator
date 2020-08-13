@@ -1,7 +1,7 @@
 
-# Project 1 
-[![License: ODbL](https://img.shields.io/badge/License-ODbL-brightgreen.svg)](https://opendatacommons.org/licenses/odbl/)
-[![Generic badge](https://img.shields.io/badge/Version-1.0.2-BLUE.svg)](https://shields.io/)
+# ethanlam 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Generic badge](https://img.shields.io/badge/Version-1.0-BLUE.svg)](https://shields.io/)
 ## Table of Contents
 
 1. [Description](#description)
@@ -13,25 +13,25 @@
 7. [Question](#questions)
 
 ## Description
-This is project 1 for the ga tech bootcamp, This is a readme generator applicaiton 
+This is a project
 
 ## Installation 
-npm install project 1
+No installation
 ## Usage 
 ```
-npm run project 1
+Not available
 ```
 
 ## License 
-Open Database License (ODbL)
+MIT
 ## Contributing
 Accepting contribution: Yes <br>
-Method: reference name and github repo
+Method: No Requirement
 
 ## Tests
-via jest
+No instruction available
 
 ## Questions 
 - Github username : ethanlam93
 - Github Repo : https://github.com/ethanlam93
-- Email : ethanlam93@gmail.com 
+- Email : I don't have an email address 
