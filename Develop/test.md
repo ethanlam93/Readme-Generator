@@ -1,6 +1,7 @@
 
-# To be announced 
-[![License: MPL 2.0](https://img.shields.io/badge/License-MPL%202.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)
+# Project 1 
+[![License: ODbL](https://img.shields.io/badge/License-ODbL-brightgreen.svg)](https://opendatacommons.org/licenses/odbl/)
+[![Generic badge](https://img.shields.io/badge/Version-1.0.2-BLUE.svg)](https://shields.io/)
 ## Table of Contents
 
 1. [Description](#description)
@@ -12,25 +13,25 @@
 7. [Question](#questions)
 
 ## Description
-This is a project
+This is project 1 for the ga tech bootcamp, This is a readme generator applicaiton 
 
 ## Installation 
-No installation
+npm install project 1
 ## Usage 
 ```
-Not available
+npm run project 1
 ```
 
 ## License 
-Mozilla Public License 2.0
+Open Database License (ODbL)
 ## Contributing
-Accepting contribution: Yes
-Method: No Requirement
+Accepting contribution: Yes <br>
+Method: reference name and github repo
 
 ## Tests
-No instruction available
+via jest
 
 ## Questions 
 - Github username : ethanlam93
 - Github Repo : https://github.com/ethanlam93
-- Email : I don't have an email address 
+- Email : ethanlam93@gmail.com 
