@@ -35,6 +35,10 @@ The generated README includes the following sections:
 node index.js
 
 ## Screenshot
+<img width="766" alt="Screen Shot 2020-08-13 at 4 38 54 PM" src="https://user-images.githubusercontent.com/64672854/90186375-0eb01b80-dd86-11ea-9336-b59eafd3a553.png">
+<img width="727" alt="Screen Shot 2020-08-13 at 4 38 48 PM" src="https://user-images.githubusercontent.com/64672854/90186379-0f48b200-dd86-11ea-8669-c094459739f4.png">
+<img width="831" alt="Screen Shot 2020-08-13 at 4 38 09 PM" src="https://user-images.githubusercontent.com/64672854/90186382-1079df00-dd86-11ea-8d83-46d3a413f905.png">
+
 
 
 
